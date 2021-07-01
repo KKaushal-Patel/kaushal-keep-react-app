@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/kaushal-keep-react-app/static/css/main.552b28d8.chunk.css",
+    "main.js": "/kaushal-keep-react-app/static/js/main.4ba15f16.chunk.js",
+    "main.js.map": "/kaushal-keep-react-app/static/js/main.4ba15f16.chunk.js.map",
+    "runtime-main.js": "/kaushal-keep-react-app/static/js/runtime-main.532ccff6.js",
+    "runtime-main.js.map": "/kaushal-keep-react-app/static/js/runtime-main.532ccff6.js.map",
+    "static/js/2.6a2568d9.chunk.js": "/kaushal-keep-react-app/static/js/2.6a2568d9.chunk.js",
+    "static/js/2.6a2568d9.chunk.js.map": "/kaushal-keep-react-app/static/js/2.6a2568d9.chunk.js.map",
+    "index.html": "/kaushal-keep-react-app/index.html",
+    "static/css/main.552b28d8.chunk.css.map": "/kaushal-keep-react-app/static/css/main.552b28d8.chunk.css.map",
+    "static/js/2.6a2568d9.chunk.js.LICENSE.txt": "/kaushal-keep-react-app/static/js/2.6a2568d9.chunk.js.LICENSE.txt",
+    "static/media/logo11.54a6700a.png": "/kaushal-keep-react-app/static/media/logo11.54a6700a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.532ccff6.js",
+    "static/js/2.6a2568d9.chunk.js",
+    "static/css/main.552b28d8.chunk.css",
+    "static/js/main.4ba15f16.chunk.js"
+  ]
+}
