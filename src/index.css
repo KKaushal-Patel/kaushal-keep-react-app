@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header part */
+.header {
+  width: 100%;
+  height: auto;
+  padding: 5px 0;
+  background-color: rgb(241, 165, 64);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 1px 2px 6px 0 rgb(0 0 0 / 20%);
+}
+.logo {
+  height: 45px;
+  border-radius: 24px;
+  margin: 0px 0px 0px 20px;
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+.header h1 {
+  margin-left: 10px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  /* color: yellow; */
+  text-shadow: -1px 0 black, 0 1px #887d7d, 1px 0 #404241, 0 -1px black;
+}
+
+/* Footer part */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+
+  /* To Rotate  */
+  /* left: -90px;
+  top: 50%;
+  transform: rotate(90deg);
+  color: rgb(0, 0, 0); */
+}
+
+/* CreateNote component */
+.createNote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  padding: 10px 0 0 5px;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* card hover effect */
+form:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.createNote input {
+  padding: 5px 5px;
+  font-size: 18px;
+  border: hidden;
+  font-weight: 500;
+  outline: white;
+  font-family: sans-serif;
+}
+.createNote textarea {
+  margin-top: 4px;
+  border: hidden;
+  padding: 5px 5px;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.createNote textarea:focus {
+  outline: 0;
+}
+.add_btn {
+  margin: 15px auto;
+  width: 8%;
+  height: 31px;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #f7971e 0%,
+    #ffca66 51%,
+    #f7971e 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+.add_btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Note component */
+.main_note {
+  width: 98%;
+  margin: 10px auto;
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  float: left;
+  height: auto;
+  width: 23vw;
+  padding: 8px;
+  margin: 10px 0px 5px 12px;
+  background-color: rgb(253, 249, 253);
+  border-radius: 6px;
+  box-shadow: 1px 4px 4px 0 rgb(0 0 0 / 20%);
+
+  /* to adjust the extra text outside the box  */
+  overflow-wrap: anywhere;
+}
+.note:hover {
+  box-shadow: inset 2px 2px 3px 0px rgb(159 73 88 / 14%),
+    inset -2px -3px 3px 0px rgb(152 75 88 / 14%);
+  transition: all 1s ease;
+}
+
+.note h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.note p {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "Heebo", sans-serif;
+  margin-top: 10px;
+}
+.note .delete_icon {
+  margin-top: 20px;
+  width: 31px;
+  height: 31px;
+  border-radius: 15px;
+  background-color: rgb(236, 148, 76);
+  color: white;
+  border: hidden;
+}
+.note .delete_icon:hover {
+  background-color: rgb(255, 0, 0);
+  transition: all 0.3s ease;
+}
+
+/* media queries */
+@media screen and (max-width: 816px) {
+  .add_btn {
+    min-width: 10%;
+  }
+  .note {
+    min-width: 30vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .add_btn {
+    min-width: 13%;
+  }
+  .main_note {
+    width: 88%;
+  }
+  .note {
+    min-width: 40vw;
+    margin: 12px 3px 5px 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  form {
+    width: 80%;
+  }
+  .add_btn {
+    min-width: 20%;
+  }
+  .main_note {
+    width: 73%;
+  }
+  .note {
+    min-width: 65vw;
+    margin: 15px 3px 7px 13px;
+  }
+}
